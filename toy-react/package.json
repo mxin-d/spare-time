@@ -1,0 +1,37 @@
+{
+  "name": "toy-react",
+  "version": "1.0.0",
+  "description": "toy react.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mxin-d/toy-react.git"
+  },
+  "keywords": [
+    "react",
+    "toy-react"
+  ],
+  "author": "mxin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mxin-d/toy-react/issues"
+  },
+  "homepage": "https://github.com/mxin-d/toy-react#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^4.2.2",
+    "html-loader": "^1.2.1",
+    "html-webpack-plugin": "^4.3.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
