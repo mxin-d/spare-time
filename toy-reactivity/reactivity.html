@@ -19,18 +19,18 @@
         r: 0,
         g: 0,
         b: 0,
-        // o: {
-        //   a: 1,
-        // },
+        o: {
+          a: 1,
+        },
       }
     
       const proxy = reactive(object)
     
       const computedObj = computed(() => proxy.r * 2)
     
-      // effect(() => {
-      //   console.log(`proxy.o.a: ${proxy.o.a}`)
-      // })
+      effect(() => {
+        console.log(`proxy.o.a: ${proxy.o.a}`)
+      })
     
       effect(() => {
         const { r, g, b } = proxy

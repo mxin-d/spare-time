@@ -8,13 +8,13 @@ const effectStack = []
  */
 function effect(fn) {
   try {
-    // 将需要执行的回调函数入栈
+    // 将需要执行的effect入栈
     effectStack.push(fn)
 
     // 执行该effect，进入proxy的get拦截
     return fn()
   } finally {
-    // 依赖收集完毕及所有get流程走完，当前回调函数出栈
+    // 依赖收集完毕及所有get流程走完，当前effect出栈
     effectStack.pop()
   }
 }
